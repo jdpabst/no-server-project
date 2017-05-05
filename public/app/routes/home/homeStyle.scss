@@ -63,14 +63,26 @@
                     top: 60%; 
                     left: 51%;
                     transform: translate(-50%, -50%);
-                    font-size: 40px;
+                    font-size: 30px;
                     color: white;
                     font-family: 'Marvel', sans-serif;
                     // border: 2px solid black;
                     
-
                     @media(min-width: 300px){
                         width: 95%;
+                        font-size: 30px;
+                    }
+
+                    @media(min-width: 350px){
+                        font-size: 40px;
+                    }
+                    @media(min-width: 650px){
+                        font-size: 50px;
+                    }
+                    @media(min-width: 910px){
+                        width: 80%;
+                        font-size: 50px;
+
                     }
                    
                 }

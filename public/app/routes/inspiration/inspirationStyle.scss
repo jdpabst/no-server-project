@@ -1,0 +1,161 @@
+.insp-main-container{
+
+position: relative;
+background-color: #FEC267;
+
+    // ///////////////////     MENUS     ///////////////////////////////////////////////////////////////////////
+            .insp_top_nav{
+                height: 90px;
+                width: 35%;
+                // border: 2px solid black;
+                display: none;
+                
+
+                li{
+                     color: white;
+                     display: flex;
+                     justify-content: space-around;
+                     text-align: center;
+                     line-height: 80px;
+                     font-size: 35px;
+                     font-weight: bold;
+                     font-family: 'Marvel', sans-serif;
+                     cursor: pointer;
+
+                     @media(min-width: 1050px){
+                         font-size: 25px
+                     }
+                    }
+
+                    @media(min-width: 1050px){
+                        display: block;
+                        width: 35%;
+                    }
+                    @media(min-width: 950px){
+                        width: 45%;
+                    }
+
+                    .insp_title{
+                        font-size: 45px;
+                        cursor: default;
+                    }
+
+                     .insp_ul{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-around;
+                        color: white;
+                        }
+        }
+
+
+// ///////////////////////      MOBILE            //////////////////////////////////////////////////
+        .insp_mobile_top_nav {
+            width: 100%;
+            height: 90px;
+            position: relative;
+            
+            
+            
+
+            @media(min-width: 1050px){
+                display: none;
+                
+            }
+
+
+            .insp_hamburger {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                z-index: 2;
+            }
+
+            #insp_bars {
+                font-size: 55px;
+                color: white;
+                position: absolute;
+                top: 4%;
+                left: 10%;
+            }
+
+
+
+
+            #insp_drop_down {
+                height: 220px;
+                width: 140px;
+                background-color: #FEC267;
+                position: absolute;
+                z-index: 1;
+
+                    
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-family: 'Marvel', sans-serif;
+                        font-size: 30px;
+                        line-height: 35px;
+                        border-bottom: 1px solid white;
+                    }
+
+                    .insp_home {
+                        position: absolute;
+                        top: 100px;
+                        left: 5px;
+
+                    }
+                    .insp_list{
+                        position: absolute;
+                        top: 140px;
+                        left: 5px;
+                    }
+                
+            }
+
+
+
+        }
+
+// /////////////////////////////////         PICTURES        ///////////////////////////////////////////////////////////////////////////////
+
+        .pic_container {
+            height: 100vh;
+            width: 100vw;
+            // border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            overflow: scroll;
+            background-color: white;
+
+
+            .pic{
+                // border: 2px solid black;
+                margin: 5px 5px;
+
+                    @media(min-width: 1135px){
+                        display: none;
+                    }
+
+            }
+
+            .pic-big{
+                // border: 2px solid black;
+                margin: 10px 10px;
+                display: none;
+
+                @media(min-width: 1135px){
+                    display: block;
+                }
+
+            }  
+      }
+        
+
+
+}
