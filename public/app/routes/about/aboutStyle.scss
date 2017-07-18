@@ -1,0 +1,91 @@
+.about_main_container{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    position: relative;
+    font-family: 'Marvel', sans-serif;
+    #about_title{
+        height: 50px;
+        width: 200px;
+        text-align: center;
+        border-bottom: 1px solid orange;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        position: relative;
+        font-size: 50px;
+        font-family: 'Marvel', sans-serif;
+    }
+    #home{
+        height: auto;
+        width: 100px;
+        background: rgba(123, 123, 123, 0.59);
+        opacity: 0.6;
+        color: white;
+        font-family: 'Marvel', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        padding: 5px 0;
+        float: right;
+        margin-top: -70px;
+        @media(max-width: 480px){
+            margin-top: -100px;
+        }
+    }
+    #home:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+    #about_content{
+        border: 3px solid rgba(123, 123, 123, 0.59);
+        height: auto;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        @media(max-width: 682px){
+            width: 95%;
+        }
+        .img{
+            margin-left: auto;
+            margin-right: auto;
+            border: 0.3px solid orange;
+            background: url('./../../../img/me.jpg') center no-repeat;
+            background-size: cover;
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            margin-bottom: 25px;
+        }
+        p{
+            font-family: 'Marvel', sans-serif;
+            font-size: 30px;
+            text-align: center;
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 25px;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 220px;
+            margin-left: auto;
+            margin-right: auto;
+            li{
+                font-size: 20px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                a:hover{
+                    text-decoration: underline;
+                    color: orange;
+                }
+            }
+        }
+    }
+}

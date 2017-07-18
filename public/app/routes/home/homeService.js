@@ -4,7 +4,7 @@ angular.module('app').service('homeService', function($http){
         
         return $http({
             method: 'GET',
-            url: "http://quotes.rest/qod.json"
+            url: "https://quotes.rest/qod.json"
         });
     };
 

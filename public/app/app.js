@@ -19,6 +19,9 @@ angular.module('app', ['ui.router'])
             templateUrl: './app/routes/inspiration/inspiration.html',
             controller: 'inspirationCtrl'
         
+        }).state('about', {
+            url: '/about',
+            templateUrl: './app/routes/about/about.html',
         })
 
         $urlRouterProvider.otherwise('/')
